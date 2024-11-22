@@ -24,7 +24,6 @@ const UserManagement = () => {
 
   const { addUser, deleteUser, updateUser } = userSlice.actions;
 
-  // new
   const dispatch = useAppDispatch();
   const users = useAppSelector((state) => state.users);
 
@@ -51,7 +50,7 @@ const UserManagement = () => {
       <Card className="w-full max-w-md shadow-2xl transform transition-all hover:scale-105">
         <CardHeader className="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
           <CardTitle className="text-2xl font-bold text-center">
-            User Management
+            Task Manager
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4 p-6">
@@ -118,8 +117,9 @@ const UserManagement = () => {
             ))}
           </div>
         </CardContent>
-        <CardFooter className="justify-center text-sm text-gray-500">
-          Powered by React & Redux
+        <CardFooter className="justify-center text-sm text-gray-500 flex-col font-bold">
+          &copy; ghost_dev
+          <small className="text-center font-light">2024</small>
         </CardFooter>
       </Card>
     </div>
