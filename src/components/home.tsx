@@ -56,7 +56,7 @@ const UserManagement = () => {
         <CardContent className="space-y-4 p-6">
           <div className="flex space-x-2">
             <Input
-              placeholder="Enter user name"
+              placeholder="Enter Task name"
               value={newUserName}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 setNewUserName(e.target.value)
